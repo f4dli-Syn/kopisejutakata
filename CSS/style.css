@@ -251,6 +251,7 @@ di hover */
   background-size: cover;
   background-position: center;
   position: relative;
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
 }
 
@@ -271,10 +272,10 @@ di hover */
 .hero .mask-container {
   position: absolute;
   inset: 0;
-  mask-image: url("../img/menu/masking.svg");
-  mask-repeat: no-repeat;
-  mask-size: cover;
-  mask-position: center;
+  -webkit-mask-image: url("../img/menu/masking.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
 }
 
 .hero .content {
@@ -657,7 +658,7 @@ footer .credit a {
     right: -100%;
     background-color: #fff;
     width: 30rem;
-    height: 100vh;
+    height: vh;
     transition: 0.5s ease-in;
   }
 
